@@ -1,0 +1,665 @@
+/* General */
+/* ======================== */
+
+* {
+    box-sizing: border-box;
+}
+    /* General: html, body */
+    html, body {
+        overflow-x: hidden;
+        overscroll-behavior: none;
+        background: #151515;
+    }
+
+
+/* Blocks */
+/* ======================== */
+
+    /* Block: .Wrapper */
+    .Wrapper {
+        position: absolute;
+        top: 0;
+        z-index: 10000;
+        width: 100%;
+        height: 100%;
+    }
+    .Wrapper.Wrapper--Hidden {
+        display: none;
+    }
+
+    /* Block: .Header */
+    .Header {
+        position: fixed;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        transition: 0.4s;
+    }
+        .Header .Navbar {
+            background-color: transparent;
+            border: none;
+            padding: 6px;
+        }
+        .Header.Header--Sticky {
+            background-color: #181818;
+            padding-bottom: 10px;
+            box-shadow: 0px 0px 16px -4px rgba(255, 255, 255, 0.01);
+        }
+            .Header .Navbar__Button {
+                display: inline-block;
+                border: 1px solid rgb(157, 156, 156);
+                border-radius: 24px;
+                color: #fff;
+                text-decoration: none;
+                padding: 8px 18px;
+            }
+
+    /* main */
+    .Main {
+        margin-top: 140px;
+    }
+
+    /* Background */
+    .glassy-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(50px);
+        pointer-events: none;
+    }
+
+    /* Block: .Hero */
+    .Hero {
+        margin-bottom: 100px;
+    }
+        .Hero .Hero__Title {
+            font-size: 80px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .Hero .Hero__Paragraph {
+            margin-top: 34px;
+            max-width: 640px;
+            color: #bdbbbb;
+        }
+            .Hero .Hero__Title .Title__Dot {
+                font-size: 80px;
+                line-height: 16px;
+                color:  #a4f83d;
+            }
+        .Hero .Hero__Glass {
+            width: max-content;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 24px 2px 2px;
+            border-radius: 64px;
+            position: relative;
+            bottom: 20px;
+            right: 40px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+            .Hero .Hero__Glass .Glass__Img {
+                width: 70px;
+                height: 70px;
+                margin-right: 12px;
+                padding: 2px;
+                border-radius: 50%;
+            }
+            .Hero .Hero__Glass .Glass__Text {
+                font-size: 12px;
+                color: #ffffff;
+            }
+                .Hero .Hero__Glass .Glass__Text .Text__Bold {
+                    font-weight: bold;
+                }
+        .Hero .Hero__Typing {
+            margin-right: 20px;
+            position: relative;
+            top: 100px;
+            right: 160px;
+            width: 340px;
+            height: max-content;
+            padding: 20px 100px 20px 20px;
+            background: #1D1E22;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 6px;
+        }
+            .Hero .Hero__Typing .Typing__Code {}
+                .Typing__Code p {
+                    border-right: .15em solid #fff;
+                    font-size: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    margin-bottom: 4px;
+                }
+                .Hero .Hero__Typing .Typing__Code p:nth-child(1) {
+                  width: 3.5em;
+                  opacity: 0;
+                  -webkit-animation: typing 1s steps(6, end);
+                  animation: typing 1s steps(6, end);
+                  -webkit-animation-delay: 0s;
+                  animation-delay: 0s;
+                  -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards;
+                }
+                .Hero .Hero__Typing .Typing__Code p:nth-child(2) {
+                  width: 14.5em;
+                  opacity: 0;
+                  -webkit-animation: typing 3s steps(26, end);
+                  animation: typing 3s steps(26, end);
+                  -webkit-animation-delay: 1s;
+                  animation-delay: 1s;
+                  -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards;
+                }
+                .Hero .Hero__Typing .Typing__Code p:nth-child(3) {
+                  width: 9.5em;
+                  opacity: 0;
+                  -webkit-animation: typing 2s steps(16, end);
+                  animation: typing 2s steps(16, end);
+                  -webkit-animation-delay: 4s;
+                  animation-delay: 4s;
+                  -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards;
+                }
+
+                .Hero .Hero__Typing .Typing__Code p:nth-child(4) {
+                  width: 9.5em;
+                  opacity: 0;
+                  -webkit-animation: typing 2s steps(17, end);
+                  animation: typing 2s steps(17, end);
+                  -webkit-animation-delay: 6s;
+                  animation-delay: 6s;
+                  -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards;
+                }
+                .Hero .Hero__Typing .Typing__Code p:nth-child(5) {
+                  width: 9.5em;
+                  opacity: 0;
+                  -webkit-animation: typing 2s steps(16, end);
+                  animation: typing 2s steps(16, end);
+                  -webkit-animation-delay: 8s;
+                  animation-delay: 8s;
+                  -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards;
+                }
+                .Hero .Hero__Typing .Typing__Code p:nth-child(6) {
+                  width: 0.6em;
+                  opacity: 0;
+                  -webkit-animation: typing 0.5s steps(1, end);
+                  animation: typing 0.5s steps(1, end);
+                  -webkit-animation-delay: 10s;
+                  animation-delay: 10s;
+                  -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards;
+                }
+                @keyframes typing {
+                  0% {
+                    width: 0;
+                  }
+                  1% {
+                    opacity: 1;
+                  }
+                  99.9% {
+                    border-right: .15em solid #fff;
+                  }
+                  100% {
+                    opacity: 1;
+                    border: none;
+                  }
+                }
+                @-webkit-keyframes typing {
+                  0% {
+                    width: 0;
+                  }
+                  1% {
+                    opacity: 1;
+                  }
+                  99.9% {
+                    border-right: .15em solid #fff;
+                  }
+                  100% {
+                    opacity: 1;
+                    border: none;
+                  }
+                }
+                    .Hero .Hero__Typing .Typing__Code .Code__Green {
+                        color: #7cf574;
+                    }
+                    .Hero .Hero__Typing .Typing__Code .Code__White {
+                        color: #fff;
+                    }
+                    .Hero .Hero__Typing .Typing__Code .Code__Blue {
+                        color: #91c9ff;
+                    }
+                    .Hero .Hero__Typing .Typing__Code .Code__Pink {
+                        color: #f65daa;
+                    }
+                    .Hero .Hero__Typing .Typing__Code .Code__Purple {
+                        color: #c375f1;
+                    }
+
+    /* Projects */
+    .Timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+    .Timeline::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background: #939393;
+        top: 0;
+        left: 50%;
+        margin-left: -3px;
+        animation: Timeline 6s linear forwards;
+    }
+    @keyframes Timeline {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 100%;
+        }
+    }
+        .Timeline .Timeline__Item {
+            position: relative;
+            width: 50%;
+            padding: 20px 40px;
+        }
+        .Timeline .Timeline__Item--Right {
+            left: 50%;
+        }
+        .Timeline .Timeline__Item--Left {
+            left: 0;
+        }
+            .Timeline .Timeline__Item .Item__Circle {
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                right: -1px;
+                top: 50px;
+                z-index: 10;
+                background: #939393;
+                border-radius: 50%;
+            }
+            .Timeline .Timeline__Item--Right .Item__Circle {
+                left: -5px;
+            }
+            .Timeline .Timeline__Item .Item__Area {
+                padding: 20px;
+                border: 1px solid #dad2fd;
+                position: relative;
+                border-radius: 6px;
+                font-size: 15px;
+                background: rgba(255, 255, 255, 0.1);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+                .Timeline .Timeline__Item .Item__Area .Area__Heading {
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #c7c6c6;
+                }
+                .Timeline .Timeline__Item .Item__Area .Area__Heading--Small {
+                    font-size: 10px;
+                    color: #c3fdbc;
+                }
+    @media screen and (max-width: 600px) {
+        .Timeline {
+            margin: 50px auto;
+        }
+        .Timeline::after {
+            left: 31px;
+        }
+        .Timeline .Timeline__Items {
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 25px;
+        }
+        .Timeline .Timeline__Item--Right {
+            left: 0;
+        }
+        .Timeline .Timeline__Item--Right .Item__Circle,
+        .Timeline .Timeline__Item--Left .Item__Circle {
+            left: 13px;
+        }
+    }
+
+    /* Projects */
+    .Projects {}
+        .Projects .Projects__Wrapper {
+            padding: 60px 0;
+            background: #c4e7b3;
+            position: relative;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .Projects .Projects__Wrapper::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            left: -100%;
+            background-color: #c4e7b3;
+        }
+            .Projects .Projects__Wrapper .Wrapper__Content {}
+                .Projects .Projects__Wrapper .Wrapper__Content .Content__Title {
+                    font-size: 34px;
+                    margin-bottom: 40px;
+                }
+                .Projects .Content__Skills {}
+                    .Projects .Content__Skills .Skills__Skill {
+                        max-width: 480px;
+                    }
+                        .Projects .Content__Skills .Skills__Skill .Skill__Title {
+                            color: #020202;
+                            margin-bottom: 6px;
+                            font-size: 10px;
+                        }
+                        .Projects .Content__Skills .Skills__Skill .Skill__Progress {
+                            background: #ffffff;
+                            margin-bottom: 10px;
+                            height: 24px;
+                            border-radius: 40px;
+                        }
+                            .Projects .Content__Skills .Skills__Skill .Skill__Progress .Progress__Bar {
+                                color: #232323;
+                                font-size: 10px;
+                                background-color: #83b955;
+                            }
+            .Projects .Projects__Wrapper .Wrapper__Swiper {
+                position: absolute;
+                max-width: 470px;
+                right: -200px;
+                top: 90px;
+            }
+                .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Wrapper {}
+                    .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Wrapper .Wrapper__Slide {
+                        text-align: center;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Wrapper .Wrapper__Slide .Slide__Img {
+                            display: block;
+                            width: 100%;
+                            border-radius: 20px;
+                            min-height: 260px;
+                            object-fit: cover;
+                        }
+                .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Pagination {
+                    margin: 30px 0 0 -4px;
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                }
+                .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Pagination .swiper-pagination-bullet {
+                    background: #ffffff;
+                    border-radius: 0;
+                    height: 4px;
+                    width: 28px;
+                }
+                .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Pagination .swiper-pagination-bullet-active {
+                    background: #ffffff;
+                }
+        .Projects .Projects__Modal {}
+            .Projects .Projects__Modal .Modal__Dialog {
+                max-width: 840px;
+            }
+                .Projects .Projects__Modal .Modal__Dialog .Dialog__Content {
+                    background: rgb(255, 255, 255);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    color: #000;
+                }
+                    .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Header {
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+                        .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Header .Header__Title {}
+                        .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Header .Header__Button {}
+                    .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Body {}
+                        .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Body .Body__Img {
+                            margin-bottom: 20px;
+                            width: 100%;
+                        }
+                            .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Body .Body__Img img {
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+                        .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Body .Body__Tags {
+                            display: flex;
+                            gap: 4px;
+                            align-items: center;
+                        }
+                            .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Body .Body__Tags .Tags__Tag {
+                                background-color: #232323;
+                                padding: 4px 10px;
+                                border-radius: 20px;
+                                font-size: 12px;
+                                color: #fff;
+                            }
+                        .Projects .Projects__Modal .Modal__Dialog .Dialog__Content .Content__Body .Body__Text {
+                            font-size: 14px;
+                            margin-top: 20px;
+                        }
+
+    /* Comments */
+    .Comments {
+        margin-bottom: 100px;
+    }
+        .Comments .Comments__Swiper {
+            width: 100%;
+            height: 100%;
+        }
+            .Comments .Comments__Swiper .Swiper__Wrapper .Wrapper__Slide {
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .Comments .Comments__Swiper .swiper-button-next:after,
+            .Comments .Comments__Swiper .swiper-button-prev:after {
+                font-size: 24px;
+                color: white;
+            }
+            .Comments .Comments__Swiper .swiper-pagination-bullet {
+                position: relative;
+                top: 14px;
+                background: #fff;
+                width: 7px;
+                height: 7px;
+            }
+                .Comments .Comments__Swiper .Swiper__Wrapper .Wrapper__Slide .Slide__Image {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                    .Comments .Comments__Swiper .Swiper__Wrapper .Wrapper__Slide .Slide__Image img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                .Comments .Comments__Swiper .Swiper__Wrapper .Wrapper__Slide .Slide__Text {
+                    font-size: 12px;
+                    max-width: 80%;
+                    color: #b2b4b6;
+                    margin: 20px 0 10px;
+                }
+                .Comments .Comments__Swiper .Swiper__Wrapper .Wrapper__Slide .Slide__Icon {
+                    width: 24px;
+                    height: 24px;
+                    margin: 10px;
+                }
+                .Comments .Comments__Swiper .Swiper__Wrapper .Wrapper__Slide .Slide__Name {
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 2px;
+                }
+                .Comments .Comments__Swiper .Swiper__Wrapper .Wrapper__Slide .Slide__Job {
+                    font-size: 10px;
+                    color: #b2b4b6;
+                }
+
+    /* SocialNetworks */
+    .SocialNetworks {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        display: flex;
+        height: 100%;
+        right: 75px;
+        gap: 34px;
+        top: 0;
+    }
+        .SocialNetworks .SocialNetworks__Link {
+            text-decoration: none;
+        }
+            .SocialNetworks .SocialNetworks__Link img {
+                width: 20px;
+                height: 20px;
+            }
+
+    /* Block: .Footer */
+    .Footer {
+        padding: 20px 0;
+    }
+        .Footer .Footer__Wrapper {
+            background-color: #defdad;
+            border-radius: 20px;
+            padding: 34px 0 10px;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            border: 2px solid #bfabfc;
+            box-shadow: inset 5px 5px rgba(0, 0, 0, .161);
+            flex-direction: column;
+        }
+            .Footer .Footer__Wrapper .Wrapper__Title {
+                font-size: 16px;
+                color: #6b4df3;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            .Footer .Footer__Wrapper .Wrapper__Links {
+                display: flex;
+                gap: 20px;
+                color: #212121;
+            }
+                .Footer .Footer__Wrapper .Wrapper__Links .Links__Item {
+                    list-style: none;
+                }
+                    .Footer .Footer__Wrapper .Wrapper__Links .Links__Item .Item__Link {
+                        color: #232323;
+                        font-size: 12px;
+                        text-decoration: none;
+                    }
+            .Footer .Footer__Wrapper .Wrapper__Text {
+                color: #313131;
+                font-size: 10px;
+            }
+
+    /* Bootstrap: .container */
+    .container {}
+    @media (min-width: 700px) {
+        .container {
+            max-width: 640px;
+        }
+        .container.container-extended {
+            max-width: 680px;
+        }
+    }
+    @media (min-width: 800px) {
+        .container {
+            max-width: 700px;
+        }
+        .container.container-extended {
+            max-width: 740px;
+        }
+    }
+    @media (min-width: 900px) {
+        .container {
+            max-width: 680px;
+        }
+        .container.container-extended {
+            max-width: 840px;
+        }
+    }
+    @media (min-width: 1000px) {
+        .container {
+            max-width: 740px;
+        }
+        .container.container-extended {
+            max-width: 940px;
+        }
+    }
+    @media (min-width: 1100px) {
+        .container {
+            max-width: 840px;
+        }
+        .container.container-extended {
+            max-width: 1040px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 940px;
+        }
+        .container.container-extended {
+            max-width: 1140px;
+        }
+    }
+    @media (min-width: 1300px) {
+        .container {
+            max-width: 1040px;
+        }
+        .container.container-extended {
+            max-width: 1240px;
+        }
+    }
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 1140px;
+        }
+        .container.container-extended {
+            max-width: 1340px;
+        }
+    }
+    @media (min-width: 1600px) {
+        .container {}
+        .container.container-extended {
+            max-width: 1440px;
+        }
+    }
+    @media (min-width: 1800px) {
+        .container {}
+        .container.container-extended {
+            max-width: 1640px;
+        }
+    }
+    @media (min-width: 1900px) {
+        .container {}
+        .container.container-extended {
+            max-width: 1740px;
+        }
+    }
