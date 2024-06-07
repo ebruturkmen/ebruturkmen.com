@@ -1,0 +1,1048 @@
+/* Responsive */
+/* ======================== */
+
+/* Tablet and Mobile Screens */
+@media (max-width: 1029px) {
+
+     /* Block: .Header */
+     .Header {}
+          .Header .Button--Hamburger {
+               font-size: 12px;
+          }
+          .Header .Header__Search button span {
+               scale: 0.8;
+          }
+          .Wrapper.active::before, .Wrapper::before, .Wrapper.Wrapper--Top::before {
+               content: '';
+               background: url("../images/home/mobile-top-wave.png");
+               position: absolute;
+               top: -2px;
+               left: 0;
+               z-index: -8;
+               rotate: 1deg;
+               width: 100vw;
+               height: 75px;               
+          }
+
+     /* Block: .Main__Swiper */
+     .Main__Swiper {}
+          .Main__Swiper .swiper, .Wavy--Jumbotron--Background {
+               background: url('../images/home/mobile-main-background.png') no-repeat;
+               background-size: 100% 100%;
+               padding: 4rem 0 10rem;
+          }
+          .Main__Swiper--Background::before, .Wavy--Jumbotron--Background::before {
+               background: url('../images/home/mobile-main-top.png') top/100% auto;
+               background-size: 100% 100%;
+               height: 40px;
+               top: 16px;
+               rotate: 2deg;
+          }
+          .Main__Swiper--Background::after, .Wavy--Jumbotron--Background::after {
+               background: url("../images/home/mobile-main-bottom.png") bottom/100% auto;
+               width: 100vw;
+               height: 116px;
+               bottom: -2px;
+               left: 0px;
+          }
+
+     /* Block: .Categories--Box */
+     .Categories {
+          margin-top: 33px;
+     }
+          .Categories h2 {
+               margin-bottom: 17px;
+               line-height: 37px;
+               font-size: 20px;
+          }
+          .Categories .Categories__Card .Card__Title {
+               font-size: 14px;
+          }
+
+     /* Block: .Why--PiriReis */
+    .Why--PiriReis {
+          margin-top: 51px;
+     }
+          .Why--PiriReis .Section__Title {
+               font-size: 24px;
+               line-height: 37px;
+          }
+          .Why--PiriReis h3 {
+               font-size: 15px;
+               letter-spacing: -3%;
+               line-height: 50px;
+          }
+          .Why--PiriReis p {
+               font-size: 13px;
+               line-height: 24px;
+          }
+          .Why--PiriReis .PromotionalVideo--Circle {
+               font-size: 12px;
+               line-height: 20px;
+          }
+          .Why--PiriReis .PromotionalVideo--Circle .Why--PiriReis__Icon {
+               width: 37px;
+               height: 37px;
+          }
+
+          /* Block: .Faculty--Guide */
+    .Faculty--Guide {
+          margin-top: 30px;
+          height: 460px;
+          padding: 80px 0;
+     }
+          .Faculty--Guide::before {
+               height: 135px;
+               top: -34px;
+          }
+          .Faculty--Guide .Faculty--Guide__MiniTitle {
+               font-size: 12px;
+               font-weight: 400;
+               margin-bottom: 0;
+          }
+          .Faculty--Guide .Faculty--Guide__Title {
+               font-size: 22px;
+               line-height: 62px;
+               margin-bottom: 21px;
+          }    
+          .Faculty--Guide  .Faculty__Swiper .swiper-slide {
+               font-size: 13px;
+               line-height: 20px;
+               width: 144px !important;
+               height: 161px !important;
+               gap: 13px;
+               margin-bottom: 56px;
+               margin-right: 15px !important;
+          }
+          .Faculty--Guide  .Faculty__Swiper .swiper-slide img {
+               width: 55px;
+               height: 55px;
+          } 
+     
+     /* Block: .Jumbotron */
+     .Jumbotron {}
+          .Wavy--Jumbotron {   
+               margin-bottom: 36px;
+          }
+          .Wavy--Jumbotron--Background::before {  
+               top: 12px;
+          }
+          .Wavy--Jumbotron__Wrapper .container p {
+               color: #B6CDFF;
+          }
+
+     /* Block: .Faculty--Buttons */
+     .Faculty--Buttons {
+          margin-bottom: 30px;
+          overflow-x: auto;
+     }
+          .Faculty--Buttons::-webkit-scrollbar {
+               display: none;
+          }
+          .Faculty--Button--active {
+               background-color: #D6E0F6;
+               color: #1E376D;
+          }
+          .Faculty--Button {
+               font-size: 12px;
+          }
+
+     /* Block: .Videos */
+     .Videos {
+          margin: 59px 0px 40px;
+     }
+          .Videos .Card .Open--Card {
+               width: 26px;
+               height: 26px;
+          }
+          .Videos .row:first-child {
+               margin-bottom: 30px;
+          }
+          .Videos .row:last-child .Card {
+               margin-bottom: 24px;
+          }
+          .Videos .row:last-child .Card .Card__Img {
+               height: 160px;
+          }
+          .Videos .row:last-child .Card .card-title {
+               margin-bottom: 0;
+               font-size: 14px;
+               margin-top: 10px;
+               line-height: 20px;
+          }
+          .Videos .row:last-child .Card small, .Videos .Mini--Videos .Card small {
+               font-size: 10px; 
+          }
+          .Videos .Mini--Videos .Card {
+               margin-bottom: 10px;
+               gap: 4%;
+               align-items: center;
+          }
+          .Videos .Mini--Videos .Card .card-title {
+               margin-bottom: 0;
+               font-size: 14px;
+               line-height: 20px;
+          }
+          .Videos .Mini--Videos .Card__Img {
+               flex: 24%;
+               height: 80px;
+          }
+          .Videos .Mini--Videos .card-body {
+               flex: 72%;
+          }
+          .Videos .Mini--Videos .Open--Card {
+               width: 20px;
+               height: 20px;
+               bottom: 6px;
+               right: 6px;
+          }
+          .Videos .Mini--Videos .Open--Card img {
+               width: 6px;
+               height: 6px;
+          }
+          .Videos .Big--Video .Card__Img {
+               height: 260px;
+          }
+          .Videos .Big--Video .card-title{
+               margin-top: 6px;
+               font-size: 18px;
+               line-height: 33px;
+               margin-bottom: 0;
+          }
+          .Videos .Big--Video .Open--Card {
+               height: 60px;
+               width: 60px;
+          }
+          .Videos .Big--Video .Open--Card img {
+               height: 20px;
+               width: 16px;
+          }
+
+          
+     /* Block: .Footer */
+     .Footer {}
+          .Footer__Wrapper {
+               height: 486px;
+               gap: 30px;
+          }
+          .Footer__Wrapper::before {
+               top: 0;
+          }
+          .Footer__Wrapper::after {
+               top: 20px;
+          }
+          footer .Logo--Circle {
+               width: 101px;
+               height: 101px;
+          }
+          footer .Logo--Circle img {
+               width: 98px;
+               height: 98px;
+          }
+          footer .Footer__Links--Row {
+               justify-content: center;
+          }
+          footer .Footer__Links--Row {
+               padding-bottom: 0;
+               border-bottom: none;
+          }
+          footer .Footer__Links--Row .Footer__Links a, Footer .Button, Footer .Footer__Contact--Row h3 {
+               display: none;
+          }
+          footer .Footer__Contact--Row .Footer__Contact--Box {
+               width: 90%;
+               margin: 0 auto;
+          }
+          footer .Footer__Contact--Row .footer__Button--Box {
+               width: 36%;
+               margin-right: 5%;
+          }
+          footer .Footer__Contact--Row .Footer__Contact--Box:nth-child(4) {
+               width: 50%;
+               margin-left: 5%;
+          }
+          footer .footer__Button--Mobile {
+               display: flex;
+               height: 56px;
+               width: 100%;
+               border-radius: 28px;
+          }
+}
+
+/* Tablet Screens */
+@media (min-width: 767px) and (max-width: 1029px) {
+
+     /* Block: .Header */
+     .Header {}
+          .Header__Logo img {
+               width: 210px;
+          }
+          .Header__Button span:last-child {
+               font-size: 10px;
+          }
+          .Header .Header__DropdownMenu.active h2 {
+               font-size: 24px;
+               line-height: 34px;
+          }
+          .Header .Header__Search {
+               font-size: 14px;
+          }
+
+     /* Block: .Main__Swiper */
+     .Main__Swiper {}
+          .Main__Swiper .swiper-slide p{
+               font-size: 1.575rem;
+               line-height: 34px;
+          }
+          .Main__Swiper--Background {
+               height: 420px;
+          }
+          .Main__Swiper .swiper-slide h5, .Main__Swiper .swiper-pagination {
+              font-size: 14px;
+          }
+          .Main__Swiper .swiper-slide .Main__Swiper__Img {
+               display: none;
+          }
+          .Main__Swiper .swiper-button-next, .Main__Swiper .swiper-button-prev {
+               width: 40px;
+               height: 40px;
+          }
+          .Main__Swiper .swiper-button-next span, .Main__Swiper .swiper-button-prev span {
+               scale: 0.6;
+          }
+          .Main__Swiper__Indicators {
+               top: 6px;
+          }
+
+     /* Block: .Categories--Box */
+     .Categories {}
+     
+     /* Block: .Why--PiriReis */
+    .Why--PiriReis {
+         margin-bottom: 100px;
+     }
+          .Why--PiriReis .row{
+               display: flex;
+               align-items: center;
+          }
+          .Why--PiriReis__Img {
+               background-size:  266px 345px;
+               margin-left: 20%;
+               width: 266px;
+               height: 345px;
+           }
+          .Why--PiriReis .PromotionalVideo--Circle {
+               top: 310px !important;
+               left: -80px !important;
+               width: 110px;
+               height: 110px;
+               font-size: 10px;
+               line-height: 16px;
+          }
+          .Why--PiriReis h3 {
+               line-height: 24px;
+          }
+
+     /* Block: .News */
+     .News {}
+          .Main__News .Section__Title {
+               font-size: 28px;
+               color: #1E376D;
+          }
+          .Main__News .Card__Body h5 {
+               font-size: 11px;
+               line-height: 16px;
+               margin-bottom: 0;
+          }
+          .Main__News .Card .Card__Body .Card__Date {
+               font-size: 10px;
+          }
+          .Main__News .Open--Card {
+               width: 24px;
+               height: 24px;
+          }
+     
+     /* Block: .Questions--Accordion */
+     .Questions--Accordion {}
+          .Questions--Accordion h3 {
+               font-size: 16px;
+          }
+          .Questions--Accordion .Questions--Accordion__Title {
+               font-size: 28px;
+          }
+          .Questions--Accordion .accordion-button {
+               width: 100%;
+               font-size: 11px;
+          }
+          .Questions--Accordion .accordion-body {
+               font-size: 11px;
+          }
+          .Questions--Accordion .Questions--Accordion__Img {
+               width: 210px;
+               height: auto;
+          }
+          .Questions--Accordion .Questions--Accordion__Img::before {
+               width: 210px;
+               height: 210px;
+          }
+          .Questions--Accordion .Questions--Accordion__Img img:last-child {
+               width: 220px;
+               height: auto;
+               bottom: -14px;
+          }
+          .Questions--Accordion .Questions--Button {
+               width: 140px;
+               height: 48px;
+               font-size: 10px;
+               margin-top: 20px;
+               margin-left: auto;
+               margin-right: auto;
+          }
+
+     /* Block: .Jumbotron */
+     .Jumbotron {}
+          .Wavy--Jumbotron--Background {  
+               height: 315px;
+          }
+          .Wavy--Jumbotron__Wrapper .container h1 {
+               font-size: 28px;
+          }
+          .Wavy--Jumbotron__Wrapper .container p {
+               font-size: 14px;
+          }
+
+     /* Block: .PointsAndQuotas--Tables */
+     .PointsAndQuotas--Tables {}
+          .PointsAndQuotas--Tables h2 {
+               margin-bottom: 10px;
+               font-size: 18px;
+          }
+          .PointsAndQuotas--Table th, .PointsAndQuotas--Table td {
+               padding: 16px 0;  
+          }
+          .PointsAndQuotas--Table th h6,
+          .PointsAndQuotas--Table td {
+               font-size: 14px;
+          }
+          .PointsAndQuotas--Table td:first-child {
+               gap: 16px;
+          }
+          .PointsAndQuotas--Table img {
+               width: 50px;
+               height: 50px;
+          } 
+          .PointsAndQuotas--Table td span {
+               font-size: 12px;
+          }
+
+     /* Block: .NewsAndBlog */
+     .NewsAndBlog {}
+          .NewsAndBlog .Card {
+               margin-bottom: 30px;
+          }
+          .NewsAndBlog .Card .Open--Card {
+               width: 24px;
+               height: 24px;
+          }
+          .NewsAndBlog .Card__Body h5 {
+               font-size: 14px;
+               margin: 8px 0 0;
+          }
+          .NewsAndBlog .Card__Body small {
+               font-size: 12px;
+          }
+
+     /* Block: .Videos */
+     .Videos {}
+ 
+     /* Block: .General-Pages */
+     .General-Pages {}
+          .Side--Menu {
+               width: 188px;
+               padding: 10px;
+          }
+          .Side--Menu h4, .Dropdown__Button {
+               font-size: 14px;
+          }
+          .Side--Menu li a {
+               font-size: 13px;
+               line-height: 20px;
+          }
+          .Side--Menu .nav-link {
+               padding: 8px 10px;
+          }
+          .GeneralPages__Text {
+               padding-left: 60px;
+          }
+          .GeneralPages--Title, .Contact--Title {
+               font-size: 24px;
+               margin-bottom: 0;
+          }
+          .GeneralPages--Subtitle, .Contact--Subtitle {
+               font-size: 18px;
+          }
+     .GeneralPages__Text .GeneralPages__Img{
+         height: 240px;
+         margin: 10px 0;
+     }
+     .GeneralPages__Text p {
+         font-size: 14px;
+         line-height: 26px;
+     }
+     .GeneralPages__Text h6 {
+         font-size: 16px;
+         line-height: 34px;
+     }
+     
+     /* Block: .Contact */
+     .Contact {
+          margin: 33px 0 40px;
+     }
+          .Page--Contact--Form .Contact--Form {
+               padding-left: 60px;
+          }
+          .Page--Contact--Form .Contact--Form .Contact--Subtitle {
+               margin-bottom: 12px;
+          }
+          .Page--Contact--Form .Contact--Form input, .Contact--Form select, .Contact--Form textarea {
+               border: 1px solid #D6E0F6;
+               padding: 8px;
+          }
+          .Page--Contact--Form .Contact__Button {
+               padding: 20px;
+          }
+          .Page--Contact--Form .Contact--Form input::placeholder,  .Contact--Form textarea::placeholder, .Contact--Form select {
+               font-size: 10px;
+          }
+          .Page--Contact--Form .Contact--Form .form-select {
+               background-position: right 0.2rem center;
+          }
+
+     /* Block: .Contact--Page */
+     .Contact--Page {
+          margin: 33px 0 40px;
+     }
+          .Contact__Button {
+               white-space: nowrap;
+          }
+
+     /* Block: Page--FreguentlyAskedQuestions */
+     .FreguentlyAskedQuestions--Accordion {}
+          .FreguentlyAskedQuestions--Accordion {
+               padding-left: 60px;
+          }
+          .FreguentlyAskedQuestions--Accordion .Questions--Accordion__Title {
+               font-size: 28px;
+          }
+     
+     /* Block: Page--Blog */
+     .Page--Blog {
+          margin: 28px 0 25px;
+     }
+     .Blog .Inner--Row {
+          padding: 0px;
+     }
+     .Blog--News .Section__Title {
+          font-size: 28px;
+     }
+     .Blog .Blog--Title {
+          font-size: 21px;
+          line-height: 34px;
+     }
+     .Blog .Blog__Button--Group .Blog__Button {
+          width: 34px;
+          height: 34px;
+     }
+     .Blog .Blog__Button--Group .Blog__Button span {
+          scale: 0.8;
+     }
+     .Blog .Blog__Img {
+          height: auto;
+          margin: 15px 0px 21px;
+     }
+     .Blog .Blog--Information__Button {
+          padding: 8px;
+          font-size: 12px;
+          gap: 6px;
+     }
+     .Blog .Blog--Information__Button span {
+          scale: 0.8;
+     }
+     .Blog__Text {
+          margin: 42px 0 78px;
+     }
+     .Blog__Text h6 {
+          font-size: 18px;
+          line-height: 34px;
+     }
+     .Blog__Text p {
+          font-size: 14px;
+          line-height: 23px;
+     }
+     .Blog--Details__Item {
+          margin-right: 10px;
+          gap: 4px;
+     }
+}
+
+/* Mobile Screens */
+@media (max-width: 766px) {
+
+     /* Block: .Header */
+     .Header {}
+          .Header .Button--Hamburger span {
+               scale: 0.8;
+          }
+          .Header__Logo img {
+               width: 151px;
+          }
+          .Header__Button {
+               width: max-content;
+               height: max-content;
+               padding: 5px;
+          }
+          .Header__Button span:last-child {
+               display: none;
+          }
+          .Header .Header__DropdownMenu.active {
+               padding-bottom: 0rem;
+               gap: 13px;
+          }
+          .Header .Header__DropdownMenu.active h2 {
+               font-size: 21px;
+               line-height: 34px;
+          }
+          .Header .Header__Search {
+               padding: 22px;
+               width: 90vw;
+               border-radius: 100px;
+               font-size: 12px;
+          }
+          .Header .Header__Search button {
+               margin-right: 0.4rem;
+          }
+          .Header .Header__DropdownMenu .Header__ButtonGroup {
+               gap: 4px;
+          }
+          .Header .Header__DropdownMenu .Header__ButtonGroup a {
+               width: max-content;
+               height: max-content;
+               padding: 5px 9px;
+               font-size: 11px;
+               letter-spacing: -5%;
+          }
+          .Wrapper.active {
+               padding-top: 1rem;
+          }
+
+     /* Block: .Main__Swiper */
+     .Main__Swiper {}
+          .Main__Swiper .swiper-slide p{
+               font-size: 1.5rem;
+               line-height: 2rem;
+          }
+          .Main__Swiper--Background {
+               height: 301px;
+          }
+          .Main__Swiper .swiper, .Wavy--Jumbotron--Background {
+               padding: 4rem 0 6rem;
+          }
+          .Main__Swiper .swiper-slide h5 {
+              font-size: 12px;
+          }
+          .Main__Swiper .swiper-slide p {
+               font-size: 18px;
+               margin-top: 9px;
+               line-height: 24px;
+          }
+          .Main__Swiper .swiper-slide .Main__Swiper__Img {
+               display: none;
+          }
+          .Main__Swiper .swiper-button-next, .Main__Swiper .swiper-button-prev {
+               width: 32px;
+               height: 32px;
+          }
+          .Main__Swiper .swiper-button-next span, .Main__Swiper .swiper-button-prev span {
+               scale: 0.4;
+          }
+          .Main__Swiper .swiper-pagination {
+               font-size: 12px;
+          }
+          .Main__Swiper__Indicators {
+               top: 6px;
+          }
+
+     /* Block: .Categories--Box */
+     .Categories {}
+          .Categories h2 {
+              text-align: center;
+          }
+
+     /* Block: .Why--PiriReis */
+    .Why--PiriReis {}
+          .Why--PiriReis__Img {
+               background-size:  216px 295px;
+               margin-left: auto;
+               margin-right: auto;
+               width: 216px;
+               height: 295px;
+           }
+          .Why--PiriReis .PromotionalVideo--Circle {
+               top: 120px;
+               left: -60px !important;
+               width: 107px;
+               height: 107px;
+          }
+          .Why--PiriReis .PromotionalVideo--Circle .Why--PiriReis__Icon {
+               width: 24px;
+               height: 24px;
+          }
+
+     /* Block: .Faculty--Guide */
+     .Faculty--Guide .container .row {
+          text-align: start;
+     }
+
+     /* Block: .News */
+     .News {
+          margin-top: 45px;
+     }
+          .News .row:nth-child(2) {
+               overflow-x: auto;
+          }
+          .News .Section__Title {
+               font-size: 24px;
+               color: #1E376D;
+               margin-bottom: 25px;
+          }
+          .News .News__Link {
+               font-size: 12px;
+          }
+          .News .Card {
+               width: 250px;
+               margin-bottom: 16px;
+          }
+          .News .Card__Img {
+               width: 250px;
+               height: 220px;
+          }
+          .News .Card__Body h5 {
+               font-size: 12px;
+          }
+          .Card .Card__Body .Card__Date {
+               font-size: 13px;
+               color: #5776B9;
+               line-height: 28px;
+           }
+          .News .row:last-child {
+               display: flex;
+               flex-wrap: nowrap;
+               gap: 16px;
+          }
+          .News .row:last-child .col-3{
+               width: max-content;
+          }
+          .News .row:nth-child(2)::-webkit-scrollbar {
+               width: 100px;
+               height: 14px;
+          }
+          .News .row:nth-child(2)::-webkit-scrollbar-track {
+               background-color: #F4F4F4;
+               border-radius: 9px;
+               padding: 10px;
+          }
+          .News .row:nth-child(2)::-webkit-scrollbar-thumb {
+               border-radius: 9px;
+               background-color: #B9BBC8;
+          } 
+
+     /* Block: .Questions--Accordion */
+    .Page--Home .Questions--Accordion {
+          margin: 27px 0 22px;
+     }
+          .Questions--Accordion h3 {
+               display: none;
+          }
+          .Questions--Accordion .Questions--Accordion__Title {
+               font-size: 24px;
+               text-align: center;
+               margin: 39px 0 15px;
+          }
+          .Questions--Accordion .accordion-button {
+               font-size: 12px;
+               line-height: 28px;
+          }
+          .Questions--Accordion .accordion-body {
+               font-size: 11px;
+          }
+          .Questions--Accordion .col-12:first-child {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          .Questions--Accordion .Questions--Accordion__Img {
+               width: 308px;
+               height: 352px;
+          }
+          .Questions--Accordion .Questions--Accordion__Img::before {
+               width: 308px;
+               height: 308px;
+          }
+          .Questions--Accordion .Questions--Accordion__Img img:last-child {
+               width: 320px;
+               height: 150px;
+          }
+
+     /* Block: .Jumbotron */
+     .Jumbotron {}
+          .Wavy--Jumbotron--Background {  
+               height: 215px;
+          }
+          .Wavy--Jumbotron__Wrapper .container h1 {
+               font-size: 24px;
+          }
+          .Wavy--Jumbotron__Wrapper .container p {
+               font-size: 12px;
+          }
+
+     /* Block: .PointsAndQuotas--Tables */
+     .PointsAndQuotas--Tables {
+          margin-bottom: 94px;
+     }
+          .PointsAndQuotas--Tables h2 {
+               margin-bottom: 15px;
+               font-size: 18px;
+          }
+          .PointsAndQuotas--Table {
+               border-top: none;
+               margin-bottom: 54px;
+          }
+          .PointsAndQuotas--Table th {
+               display: none;
+          }
+          .PointsAndQuotas--Table td {
+               padding: 8px 0;  
+          }
+          .PointsAndQuotas--Table tr {
+               display: flex;
+               align-items: center;
+               flex-wrap: wrap;
+          }
+          .PointsAndQuotas--Table td:nth-child(1), .PointsAndQuotas--Table td:nth-child(2) {
+               flex: 50%;
+          }
+          .PointsAndQuotas--Table td:nth-child(2)::before {
+               content: "PUAN TÜRÜ";
+          }
+          .PointsAndQuotas--Table td:nth-child(3)::before {
+               content: "KONTENJAN";
+          }
+          .PointsAndQuotas--Table td:nth-child(4)::before {
+               content: "TABAN PUAN";
+          }
+          .PointsAndQuotas--Table td:nth-child(5)::before {
+               content: "2022 BAŞARI SIRASI";
+          }
+          .PointsAndQuotas--Table td:nth-child(2)::before,  
+          .PointsAndQuotas--Table td:nth-child(3)::before,
+          .PointsAndQuotas--Table td:nth-child(4)::before, 
+          .PointsAndQuotas--Table td:nth-child(5)::before {
+               display: block;
+               font-size: 12px;
+               line-height: 28px;
+               font-weight: normal;
+               letter-spacing: -1%;
+               color: #1E376D;
+          }
+          .PointsAndQuotas--Table td:nth-child(3), .PointsAndQuotas--Table td:nth-child(4), .PointsAndQuotas--Table td:nth-child(5) {
+               flex: 32%;
+               background-color: #D6E0F6;
+               border-radius: 6px;
+               margin-right: 2%;
+          }
+          .PointsAndQuotas--Table td:nth-child(5) {
+               margin-right: 0;
+          }
+          .PointsAndQuotas--Table tr {
+               padding-bottom: 12px;
+          } 
+
+          .PointsAndQuotas--Table td {
+               text-align: center;
+               font-size: 14px;
+          }
+
+          .PointsAndQuotas--Table td:first-child {
+               align-items: stretch;
+               gap: 11px;
+          }
+          .PointsAndQuotas--Table td:nth-child(2) {
+               text-align: end;
+          }
+          .PointsAndQuotas--Table img {
+               width: 50px;
+               height: 50px;
+          } 
+          .PointsAndQuotas--Table td span {
+               font-size: 12px;
+          }
+
+     /* Block: .NewsAndBlog */
+     .NewsAndBlog {
+          margin: 59px 0px 40px;
+     }
+          .NewsAndBlog .Card {
+               margin-bottom: 14px;
+          }
+          .NewsAndBlog .Card .Open--Card {
+               width: 22px;
+               height: 22px;
+          }
+          .NewsAndBlog .Card__Body h5 {
+               font-size: 12px;
+               line-height: 18px;
+               letter-spacing: -4%;
+               margin-bottom: 2px;
+          }
+          .NewsAndBlog .Card__Body small {
+               font-size: 11px;
+          }
+ 
+     /* Block: .General-Pages */
+     .General-Pages {
+          margin: 33px 0 74px;
+     }
+          .Dropdown {
+               display: flex;
+               margin-bottom: 30px;
+          }
+          .Dropdown__Button {
+               width: 100%;
+               border: 2px solid #B6CDFF;
+               background-color: white;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               padding: 18px;
+               font-size: 15px;
+               border-radius: 11px;
+          }
+          .Dropdown__Button:hover, 
+          .Dropdown__Button:checked, 
+          .Dropdown__Button.show, 
+          .Dropdown__Button:active, 
+          .Dropdown__Button.active {
+               background-color: #B6CDFF;
+               border: 2px solid #B6CDFF;
+               color: #1E376D;
+          }
+          .Dropdown--Menu {
+               width: 100%;
+          }
+          .Dropdown--Item {
+               width: 100%;
+               padding-bottom: 10px;
+          }
+          .Side--Menu, .GeneralPages__Text h6 {
+               display: none;
+          }
+          .GeneralPages--Title, .Contact--Title {
+               font-size: 24px;
+               margin-bottom: 0;
+          }
+          .GeneralPages--Subtitle, .Contact--Subtitle {
+               font-size: 16px;
+               margin-bottom: 0;
+          }
+          .GeneralPages__Text .GeneralPages__Img{
+               height: 281px;
+               margin: 20px 0;
+          }
+          .GeneralPages__Text p {
+               font-size: 14px;
+               line-height: 25px;
+          }
+     
+     /* Block: .Contact */
+     .Contact {
+          margin: 33px 0 40px;
+     }
+          .Contact--Form {
+               width: 100%;
+          }
+          .Contact--Form .Contact--Subtitle {
+               margin-bottom: 12px;
+          }
+          .Contact--Form input, .Contact--Form select, .Contact--Form textarea {
+               border: 1px solid #D6E0F6;
+          }
+          .Contact__Button {
+               width: 100%;
+          }
+ 
+     /* Block: .Contact--Page */
+     .Contact--Page {
+          margin: 33px 0 40px;
+     }
+
+     /* Block: Page--FreguentlyAskedQuestions */
+     .FreguentlyAskedQuestions--Accordion {}
+          .FreguentlyAskedQuestions--Accordion .col-12 {
+               flex-direction: column;
+          }
+
+     /* Block: Page--Blog */
+     .Page--Blog {
+          margin: 28px 0 25px;
+     }
+          .Blog .Inner--Row {
+               padding: 0px;
+          }
+          .Blog .Inner--Row:first-child .col-12 {
+               align-items: flex-start;
+               flex-direction: column;
+          }
+          .Blog--News .Section__Title {
+               font-size: 24px;
+          }
+          .Blog .Blog--Title {
+               font-size: 21px;
+               line-height: 42px;
+          }
+          .Blog .Blog__Button--Group {
+               gap: 7px;
+          }
+          .Blog .Blog__Button--Group .Blog__Button {
+               width: 34px;
+               height: 34px;
+          }
+          .Blog .Blog__Button--Group .Blog__Button span {
+               scale: 0.6;
+          }
+          .Blog .Blog__Img {
+               height: 228px;
+               margin: 15px 0px 21px;
+          }
+          .Blog .Blog__Img img {
+               border-radius: 16px;
+          }
+          .Blog__Text--Information {
+               flex-direction: column;
+               padding-bottom: 22px;
+          }
+          .Blog__Text--Information .Blogger {
+               width: 100%;
+               margin-bottom: 14px;
+          }
+          .Blog__Text {
+               margin: 42px 0 78px;
+          }
+          .Blog__Text h6 {
+               font-size: 18px;
+               line-height: 34px;
+          }
+          .Blog__Text p {
+               font-size: 12px;
+               line-height: 23px;
+          }
+}
