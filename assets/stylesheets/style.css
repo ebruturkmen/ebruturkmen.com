@@ -668,17 +668,17 @@
 /* ======================== */
 
 /* Tablet and Mobile Screens */
-@media (max-width: 1029px) {
+@media (max-width: 500px) {
 
     /* Block: .Header */
     .Header {}
-            .Header .Navbar__Button {
-                display: none;
-            }
+        .Header .Navbar__Button {
+            display: none;
+        }
 
     /* main */
     .Main {
-        margin-top: 140px;
+        margin-top: 120px;
     }
 
     /* Block: .Hero */
@@ -686,28 +686,35 @@
         margin-bottom: 100px;
     }
         .Hero .Hero__Title {
-            font-size: 40px;
+            font-size: 34px;
             color: #fff;
             font-weight: bold;
         }
         .Hero .Hero__Paragraph {
-            margin-top: 34px;
+            margin-top: 24px;
         }
             .Hero .Hero__Title .Title__Dot {
                 font-size: 60px;
             }
         .Hero .Hero__Glass {
-            left: 200px;
-            margin-top: 10px;
+            right: -34px;
+            margin-top: 40px;
         }
             .Hero .Hero__Glass .Glass__Img {
                 width: 60px;
                 height: 60px;
             }
-        .Hero .Hero__Typing {
-            top: 10px;
-            right: -34px;
-        }
+            .Hero .Hero__Typing {
+                position: relative;
+                top: 0;
+                right: 0px;
+                width: 260px;
+                height: max-content;
+                padding: 20px 60px 20px 20px;
+                background: #1D1E22;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+                border-radius: 6px;
+            }
 
     .Timeline {
     }
@@ -721,11 +728,9 @@
     }
         .Projects .Projects__Wrapper {
             width: 100%;
-            padding: 40px;
-            background: #c4e7b3;
-            position: relative;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
         }
         .Projects .Projects__Wrapper::before {
             content: '';
@@ -733,14 +738,19 @@
             height: 0;
             width: 0;
         }
-            .Projects .Projects__Wrapper .Wrapper__Content {}
+            .Projects .Projects__Wrapper .Wrapper__Content {
+                background-color: #bdfdb8;
+                width: 100%;
+                padding: 20px;
+                border-radius: 10px;
+            }
                 .Projects .Projects__Wrapper .Wrapper__Content .Content__Title {
-                    font-size: 34px;
+                    font-size: 24px;
                     margin-bottom: 40px;
                 }
                 .Projects .Content__Skills {}
                     .Projects .Content__Skills .Skills__Skill {
-                        max-width: 480px;
+                        width: 100%;
                     }
                         .Projects .Content__Skills .Skills__Skill .Skill__Title {
                             color: #020202;
@@ -750,7 +760,7 @@
                         .Projects .Content__Skills .Skills__Skill .Skill__Progress {
                             background: #ffffff;
                             margin-bottom: 10px;
-                            height: 24px;
+                            height: 20px;
                             border-radius: 40px;
                         }
                             .Projects .Content__Skills .Skills__Skill .Skill__Progress .Progress__Bar {
@@ -759,10 +769,11 @@
                                 background-color: #83b955;
                             }
             .Projects .Projects__Wrapper .Wrapper__Swiper {
-                position: absolute;
-                max-width: 470px;
-                right: -200px;
-                top: 90px;
+                position: relative;
+                width: 100%;
+                right: 0;
+                top: 0;
+                margin-top: 24px;
             }
                 .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Wrapper {}
                     .Projects .Projects__Wrapper .Wrapper__Swiper .Swiper__Wrapper .Wrapper__Slide {
@@ -853,5 +864,5 @@
             max-width: 80%;
             color: #b2b4b6;
             margin: 20px 0 10px;
-        }       
+        }   
 }
