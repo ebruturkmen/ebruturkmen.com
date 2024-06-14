@@ -6,9 +6,9 @@
 }
     /* General: html, body */
     html, body {
-        overflow-x: hidden;
         overscroll-behavior: none;
         background: #151515;
+        overflow-x: hidden;
     }
 
 
@@ -39,6 +39,7 @@
             background-color: transparent;
             border: none;
             padding: 6px;
+            width: 100%;
         }
         .Header.Header--Sticky {
             background-color: #181818;
@@ -57,6 +58,8 @@
     /* main */
     .Main {
         margin-top: 140px;
+        width: 100%;
+        overflow: hidden;
     }
 
     /* Background */
@@ -82,7 +85,7 @@
         }
         .Hero .Hero__Paragraph {
             margin-top: 34px;
-            max-width: 640px;
+            max-width: 440px;
             color: #bdbbbb;
         }
             .Hero .Hero__Title .Title__Dot {
@@ -96,7 +99,7 @@
             padding: 2px 24px 2px 2px;
             border-radius: 64px;
             position: relative;
-            bottom: 20px;
+            top: 40;
             right: 40px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
@@ -348,7 +351,7 @@
             content: '';
             position: absolute;
             height: 100%;
-            width: 100%;
+            width: 120%;
             z-index: -1;
             top: 0;
             left: -100%;
@@ -666,9 +669,50 @@
 
 /* Responsive */
 /* ======================== */
+@media (max-width: 800px) {
+    .Main {
+        margin-top: 140px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Block: .Hero */
+    .Hero {
+        margin-bottom: 100px;
+    }
+        .Hero .Hero__Title {
+            font-size: 80px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .Hero .Hero__Paragraph {
+            margin-top: 34px;
+            max-width: 440px;
+        }
+            .Hero .Hero__Title .Title__Dot {
+                font-size: 80px;
+                line-height: 16px;
+                color:  #a4f83d;
+            }
+        .Hero .Hero__Glass {
+            width: max-content;
+            border-radius: 64px;
+            position: relative;
+            top: 40;
+            float: right;
+        }
+        .Hero .Hero__Typing {
+            position: relative;
+            top: 100px;
+            right: 0px;
+        }
+    .Timeline {
+        top: 40px;
+    }
+}
 
 /* Tablet and Mobile Screens */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     /* Block: .Header */
     .Header {}
@@ -692,12 +736,12 @@
         }
         .Hero .Hero__Paragraph {
             margin-top: 24px;
+            width: 100% !important;
         }
             .Hero .Hero__Title .Title__Dot {
                 font-size: 60px;
             }
         .Hero .Hero__Glass {
-            right: -34px;
             margin-top: 40px;
         }
             .Hero .Hero__Glass .Glass__Img {
@@ -706,8 +750,6 @@
             }
             .Hero .Hero__Typing {
                 position: relative;
-                top: 0;
-                right: 0px;
                 width: 260px;
                 height: max-content;
                 padding: 20px 60px 20px 20px;
@@ -865,4 +907,10 @@
             color: #b2b4b6;
             margin: 20px 0 10px;
         }   
+
+    /* SocialNetworks */
+    .SocialNetworks {
+        right: 16px;
+        z-index: 1000000;
+    }
 }
